@@ -158,9 +158,9 @@ RegisterCommand("looc", function(source, args, _)
 end, false)
 
 -- ======================
---  ME command (prox)
+--  ME2 command (prox)
 -- ======================
-RegisterCommand("me", function(source, args, _)
+RegisterCommand("me2", function(source, args, _)
 	if #args == 0 then
 		return
 	end
@@ -170,13 +170,13 @@ RegisterCommand("me", function(source, args, _)
 	local ped = GetPlayerPed(source)
 	local coords = GetEntityCoords(ped)
 
-	LogToDiscord(string.format("**[ME]** `%s`: %s", playerName, message))
+	LogToDiscord(string.format("**[ME2]** `%s`: %s", playerName, message))
 	TriggerClientEvent(
 		"modern_chat:addProximityMessage",
 		-1,
-		"me",
+		"me2",
 		playerName,
-		"ME",
+		"ME2",
 		message,
 		source,
 		coords.x,

@@ -20,7 +20,7 @@ Citizen.CreateThread(function()
 		{ name = "Message", help = "The message to send" },
 	})
 
-	TriggerEvent("chat:addSuggestion", "/me", "Perform an action in character locally", {
+	TriggerEvent("chat:addSuggestion", "/me2", "Perform an action in character locally", {
 		{ name = "Action", help = "The action to perform" },
 	})
 
