@@ -9,7 +9,7 @@ A simple, aesthetic theme for FiveM's chat with several built-in commands design
 - Discord logging & role integration
 - 10 ready-to-go commands for your RP experience:
     - `/ooc` & `/looc` - out-of-character
-    - `/me` & `/gme` - in-character 
+    - `/me2` & `/gme` - in-character 
     - `/do` - environments
     - `/ad` - advertisements
     - `/li` - LifeInvader

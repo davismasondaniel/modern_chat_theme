@@ -170,7 +170,6 @@ RegisterCommand("me2", function(source, args, _)
 	local ped = GetPlayerPed(source)
 	local coords = GetEntityCoords(ped)
 
-	LogToDiscord(string.format("**[ME2]** `%s`: %s", playerName, message))
 	TriggerClientEvent(
 		"modern_chat:addProximityMessage",
 		-1,
@@ -196,7 +195,6 @@ RegisterCommand("gme", function(source, args, _)
 	local message = table.concat(args, " ")
 	local playerName = GetPlayerName(source)
 
-	LogToDiscord(string.format("**[GME]** `%s`: %s", playerName, message))
 	TriggerClientEvent("modern_chat:addMessage", -1, "gme", playerName, "gME", message)
 end, false)
 
@@ -213,7 +211,6 @@ RegisterCommand("do", function(source, args, _)
 	local ped = GetPlayerPed(source)
 	local coords = GetEntityCoords(ped)
 
-	LogToDiscord(string.format("**[DO]** `%s`: %s", playerName, message))
 	TriggerClientEvent(
 		"modern_chat:addProximityMessage",
 		-1,
@@ -239,7 +236,6 @@ RegisterCommand("ad", function(source, args, _)
 	local message = table.concat(args, " ")
 	local playerName = GetPlayerName(source)
 
-	LogToDiscord(string.format("**[AD]** `%s`: %s", playerName, message))
 	TriggerClientEvent("modern_chat:addMessage", -1, "ad", playerName, "AD", message)
 end, false)
 
@@ -254,7 +250,6 @@ RegisterCommand("li", function(source, args, _)
 	local message = table.concat(args, " ")
 	local playerName = GetPlayerName(source)
 
-	LogToDiscord(string.format("**[LI]** `%s`: %s", playerName, message))
 	TriggerClientEvent("modern_chat:addMessage", -1, "li", playerName, "li", message)
 end, false)
 
@@ -269,7 +264,6 @@ RegisterCommand("dw", function(source, args, _)
 	local message = table.concat(args, " ")
 	local playerName = GetPlayerName(source)
 
-	LogToDiscord(string.format("**[DW]** `%s`: %s", playerName, message))
 	TriggerClientEvent("modern_chat:addMessage", -1, "dw", "Anonymous", "Dark Web", message)
 end, false)
 
