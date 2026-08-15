@@ -11,7 +11,7 @@ function GetTimestamp()
 end
 
 -- command autocompletes
-Citizen.CreateThread(function()
+CreateThread(function()
 	TriggerEvent("chat:addSuggestion", "/ooc", "Out of character global chat", {
 		{ name = "Message", help = "The message to send" },
 	})

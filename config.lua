@@ -36,15 +36,15 @@ Config.ProximityRange = 20.0 -- the range that proximity messages will be receiv
 Config.ESX = false -- set to true if using esx (this will disable ESX's RP chat)
 
 -- Discord Integration
-Config.DiscordRolesEnabled = true -- prefix messages with the sender's highest Discord role
+Config.DiscordRolesEnabled = false -- prefix messages with the sender's highest Discord role
 Config.DiscordGuildId = ""
 Config.DiscordBotToken = ""
 
 -- Webhook Logging
-Config.DiscordLogs = true -- log chat messages/commands to a Discord channel
+Config.DiscordLogs = false -- log chat messages/commands to a Discord channel
 Config.DiscordWebhookURL = ""
 
 -- Server event messages
 Config.JoinMessages = true -- announce when a player joins
 Config.LeaveMessages = true -- announce when a player leaves
-Config.LogDrops = true -- print drop reason to server console (useful for crash debugging)
+Config.LogDrops = false -- print drop reason to server console (useful for crash debugging)
